@@ -1,0 +1,540 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#171217">
+<title>Luka yang Melahirkan Dendam — Chapter 2</title>
+
+<style>
+:root {
+  --bg:#171217;
+  --panel:#241b25;
+  --paper:#f0e7df;
+  --muted:#b9aab5;
+  --rose:#d58c9c;
+  --rose2:#f0b9c5;
+  --gold:#d5b88a;
+  --line:#4a3544;
+}
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body {
+  margin:0;
+  min-height:100vh;
+  color:var(--paper);
+  background:radial-gradient(ellipse at top,#382331 0%,var(--bg) 60%);
+  font-family:Georgia,"Times New Roman",serif;
+  line-height:1.85;
+}
+.shell {
+  width:min(100%,760px);
+  margin:auto;
+  padding:0 17px 30px;
+}
+header { padding:32px 0 22px;text-align:center; }
+.eyebrow {
+  color:var(--gold);
+  text-transform:uppercase;
+  letter-spacing:.2em;
+  font:11px/1.5 system-ui,sans-serif;
+}
+h1 {
+  font-size:clamp(2rem,8vw,3.4rem);
+  line-height:1.1;
+  font-weight:500;
+  margin:15px 0;
+}
+h1 span { color:var(--rose2);font-style:italic; }
+.subtitle { color:var(--muted);font-size:14px; }
+.ornament { color:var(--rose);letter-spacing:.5em;margin:18px; }
+.cover {
+  padding:16px;
+  border:1px solid var(--line);
+  border-radius:15px;
+  background:#211922b8;
+  font-size:13px;
+  color:#d4c4cd;
+  margin-bottom:20px;
+}
+.progress { font:12px system-ui,sans-serif;color:var(--muted);margin-bottom:15px; }
+.progress-meta { display:flex;justify-content:space-between;margin-bottom:8px; }
+.track { height:4px;background:#493541;border-radius:20px;overflow:hidden; }
+.bar { height:100%;background:linear-gradient(90deg,var(--rose),var(--gold));width:6.67%;transition:width .2s; }
+.reader {
+  background:linear-gradient(145deg,#2a2029,#201820);
+  border:1px solid var(--line);
+  border-radius:18px;
+  padding:24px 20px;
+  box-shadow:0 18px 50px #0004;
+}
+.label {
+  color:var(--rose2);
+  text-transform:uppercase;
+  letter-spacing:.16em;
+  font:10px system-ui,sans-serif;
+}
+h2 { font-size:clamp(1.45rem,6vw,2rem);line-height:1.3;font-weight:500;margin:12px 0 22px; }
+.story p { font-size:16.5px;margin:0 0 1.2em; }
+.story p.dialog { padding-left:13px;border-left:2px solid #9d6478;color:#f5d8df; }
+.story p.scene { text-align:center;color:var(--gold);font-style:italic;margin:25px 0; }
+.story p.dropcap:first-letter {
+  float:left;font-size:3.2em;line-height:.85;
+  padding:7px 8px 0 0;color:var(--rose2);
+}
+.controls { display:grid;grid-template-columns:1fr 1.35fr;gap:10px;margin:16px 0; }
+button {
+  border:1px solid #654455;border-radius:12px;
+  padding:12px 9px;min-height:46px;
+  font:600 13px system-ui,sans-serif;
+  cursor:pointer;color:var(--paper);background:#30232e;
+}
+button.primary {
+  color:#211820;border-color:transparent;
+  background:linear-gradient(110deg,var(--rose2),var(--gold));
+}
+button:disabled { opacity:.35;cursor:not-allowed; }
+.pages { display:flex;justify-content:center;flex-wrap:wrap;gap:7px;margin:18px 0 24px; }
+.pages button { min-width:36px;min-height:36px;padding:5px;border-radius:9px; }
+.pages button.active { background:var(--rose2);color:#251923;border-color:var(--rose2); }
+.end { text-align:center;color:var(--gold);font-style:italic;margin-top:25px; }
+footer { text-align:center;color:#a997a3;font:11px/1.8 system-ui,sans-serif;padding:15px; }
+@media(min-width:600px) {
+  .reader { padding:32px 38px; }
+  .story p { font-size:18px; }
+}
+@media(prefers-reduced-motion:reduce) {
+  html { scroll-behavior:auto; }
+  * { transition:none!important; }
+}
+</style>
+</head>
+
+<body>
+<main class="shell">
+<header>
+  <div class="eyebrow">Sebuah novel tentang cinta, rahasia, dan pengkhianatan</div>
+  <h1>Luka yang<br><span>Melahirkan Dendam</span></h1>
+  <p class="subtitle">Tidak semua pembalasan datang dengan suara. Beberapa dimulai dari keheningan.</p>
+  <div class="ornament">✦ ❧ ✦</div>
+</header>
+
+<div class="cover">
+  <strong>CHAPTER 2 · PERMAINAN DALAM KEHENINGAN</strong><br>
+  Kebenaran mulai menampakkan wajahnya. Namun, semakin dekat Alena pada jawabannya, semakin ia sadar bahwa orang yang mengkhianatinya mungkin bukan hanya dua orang.
+</div>
+
+<section class="progress">
+  <div class="progress-meta">
+    <span id="counter">Halaman 1 dari 15</span>
+    <span id="percent">7% terbaca</span>
+  </div>
+  <div class="track"><div class="bar" id="bar"></div></div>
+</section>
+
+<article class="reader" aria-live="polite">
+  <div class="label" id="label">Chapter 2 · Halaman 1</div>
+  <h2 id="title"></h2>
+  <div class="story" id="story"></div>
+  <div class="end" id="end" hidden>— Bersambung ke Chapter 3 —</div>
+</article>
+
+<nav class="controls">
+  <button id="prev">← Sebelumnya</button>
+  <button class="primary" id="next">Halaman Selanjutnya →</button>
+</nav>
+
+<div class="pages" id="pages"></div>
+
+<footer>
+  LUKA YANG MELAHIRKAN DENDAM · CHAPTER 2<br>
+  Dibuat untuk membaca nyaman di smartphone.
+</footer>
+</main>
+
+<script>
+const chapters = [
+
+{
+title:"Undangan yang Tidak Bisa Diabaikan",
+paragraphs:[
+["dropcap","Pukul tujuh malam, Alena berdiri di depan cermin kamarnya. Gaun hitam sederhana yang dikenakannya bukan gaun mahal, bukan pula pakaian yang dirancang untuk menarik perhatian. Ia membelinya beberapa bulan lalu dengan uang hasil kerja lembur. Malam ini, ia tidak ingin terlihat kaya. Ia hanya ingin terlihat seperti dirinya sendiri."],
+["","Undangan gala Mahendra Group tergeletak di meja. Kartu berwarna hitam dengan tulisan emas itu tampak seperti pintu menuju dunia yang dahulu hanya ia lihat dari kejauhan. Dunia yang sama dengan tempat Raka tumbuh, tempat Nadin kini berdiri di sisinya, dan tempat nama Alena diam-diam terseret ke dalam dokumen yang tidak pernah ia tanda tangani."],
+["dialog","“Kamu yakin mau pergi?” tanya Mira melalui telepon."],
+["dialog","“Aku belum yakin dengan apa yang akan kutemukan. Tapi aku lebih tidak yakin kalau terus bersembunyi.”"],
+["","Mira mengingatkannya agar tidak datang sendirian jika merasa terancam, tidak menyerahkan dokumen asli kepada siapa pun, dan tidak terpancing oleh provokasi. Alena berjanji akan berhati-hati."],
+["","Sebelum keluar, ia memandang foto ayahnya yang terpasang di dinding. Ayahnya pernah berkata bahwa orang miskin tidak boleh kehilangan dua hal sekaligus: uang dan harga diri. Alena sudah kehilangan banyak hal. Malam ini, ia datang untuk memastikan bahwa namanya tidak ikut dirampas."]
+]
+},
+
+{
+title:"Pesta Orang-Orang Berkuasa",
+paragraphs:[
+["dropcap","Hotel tempat gala berlangsung berdiri megah di pusat Jakarta. Lampu kristal menggantung di langit-langit lobi, lantai marmer memantulkan cahaya keemasan, dan para tamu datang dengan pakaian yang nilainya mungkin melebihi tabungan keluarga Alena selama bertahun-tahun."],
+["","Alena menyerahkan undangan dan melangkah masuk. Beberapa orang memandangnya sekilas. Tidak ada yang mengenalnya, dan ia lebih menyukai keadaan itu. Ia dapat melihat ruangan tanpa harus menjelaskan siapa dirinya."],
+["","Di ujung ruangan, Raka berdiri bersama ayahnya, Adrian Mahendra, seorang pria berusia akhir lima puluhan dengan wajah tenang dan tatapan yang sulit ditebak. Di samping Raka berdiri Nadin dalam gaun berwarna merah anggur. Mereka terlihat seperti pasangan yang telah lama disiapkan untuk sebuah pengumuman."],
+["dialog","“Kamu benar-benar datang.” Suara Raka terdengar di belakangnya."],
+["dialog","Alena menoleh. “Aku diundang. Bukankah itu alasan orang datang ke sebuah acara?”"],
+["","Raka tampak hendak mengatakan sesuatu, tetapi seorang tamu memanggilnya. Sebelum pergi, ia berbisik bahwa mereka harus berbicara setelah acara."],
+["","Alena hanya mengangguk. Ia tidak datang untuk meminta penjelasan cinta. Ia datang karena sebuah dokumen membawa namanya, dan ia ingin mengetahui siapa yang mengira dirinya terlalu kecil untuk melawan."]
+]
+},
+
+{
+title:"Senyum di Balik Kebohongan",
+paragraphs:[
+["dropcap","Nadin melihat Alena tidak lama setelah Raka meninggalkannya. Senyum di wajahnya sempat hilang, lalu kembali terpasang dengan sempurna. Ia mendekat sambil membawa segelas minuman yang belum disentuh."],
+["dialog","“Aku tidak menyangka kamu akan datang, Len.”"],
+["dialog","“Aku juga tidak menyangka kamu akan berada di sini sebagai orang penting.”"],
+["","Nadin tertawa pelan, seolah kalimat itu hanya gurauan. Ia mengatakan bahwa pekerjaan sebagai konsultan acara membawanya ke banyak kesempatan baru. Alena mendengarkan tanpa menunjukkan rasa terkejut atau iri."],
+["dialog","“Kamu terlihat berbeda,” kata Nadin. “Dulu kamu selalu gugup kalau berada di tempat seperti ini.”"],
+["dialog","“Dulu aku terlalu sibuk memikirkan apa yang orang lain pikirkan tentangku.”"],
+["","Ada jeda singkat. Nadin memandang Alena lebih lama, seakan berusaha menemukan perempuan yang dulu mudah ia baca. Ia tidak menemukan kemarahan yang meledak-ledak, tidak menemukan air mata, bahkan tidak menemukan permohonan untuk menjelaskan hubungan mereka."],
+["","Yang berdiri di hadapannya adalah seseorang yang menyimpan pertanyaan, dan Nadin tidak tahu berapa banyak jawaban yang sudah dimiliki perempuan itu."],
+["","Untuk pertama kalinya malam itu, senyum Nadin terasa berat."]
+]
+},
+
+{
+title:"Nama di Dalam Dokumen",
+paragraphs:[
+["dropcap","Alena sengaja tidak mengikuti Raka ke ruang utama. Ia memilih berjalan menuju meja registrasi sponsor, tempat beberapa staf sibuk memeriksa daftar tamu dan berkas acara. Salah satu papan informasi menampilkan nama perusahaan-perusahaan yang mendukung gala tersebut."],
+["","Di antara nama besar itu, ia melihat sebuah perusahaan bernama Arunika Konsultan Investama. Nama itu terasa familier. Ia pernah membacanya pada salah satu lembar dokumen yang dikirimkan ke kantornya."],
+["","Alena tidak mengambil berkas atau memotret dokumen milik orang lain secara diam-diam. Ia hanya membaca informasi yang terpampang untuk umum, kemudian mencatat nama perusahaan itu dalam ponselnya. Ada sesuatu yang mengganggunya: perusahaan tersebut tercatat sebagai mitra proyek yang berkaitan dengan transaksi atas namanya."],
+["dialog","“Sedang mencari seseorang?” tanya seorang pria berjas abu-abu."],
+["dialog","“Tidak. Saya sedang melihat daftar sponsor.”"],
+["","Pria itu memperkenalkan diri sebagai Dimas Pradipta, staf keuangan senior Mahendra Group. Ketika Alena menyebut nama Arunika Konsultan, ekspresinya berubah sesaat. Sangat singkat, tetapi cukup untuk tertangkap oleh mata yang sudah terbiasa memperhatikan perubahan kecil."],
+["dialog","“Perusahaan itu sudah lama tidak menangani proyek kami,” kata Dimas."],
+["dialog","“Kalau begitu, mengapa namanya masih tercantum?”"],
+["","Dimas tidak menjawab langsung. Ia meminta izin untuk kembali bekerja, lalu pergi dengan langkah yang terlalu cepat untuk seseorang yang mengaku tidak memiliki masalah."]
+]
+},
+
+{
+title:"Lelaki yang Memilih Diam",
+paragraphs:[
+["dropcap","Setelah pidato pembukaan, Alena menemukan Adrian Mahendra berdiri sendirian di dekat jendela besar. Dari tempat itu, lampu kota terlihat seperti hamparan bintang. Ia mendekat setelah memastikan tidak sedang mengganggu percakapan siapa pun."],
+["dialog","“Pak Adrian, boleh saya bertanya sesuatu?”"],
+["dialog","Pria itu menoleh. “Alena, bukan? Saya pernah mendengar nama kamu.”"],
+["","Alena tidak tahu apakah kalimat itu sebuah peringatan atau sekadar basa-basi. Ia memperkenalkan dirinya secara singkat dan mengatakan bahwa namanya mungkin tercantum dalam sebuah dokumen yang berkaitan dengan proyek perusahaan."],
+["dialog","“Dokumen seperti apa?”"],
+["dialog","“Dokumen yang tidak pernah saya setujui. Saya sedang mencari tahu bagaimana nama saya bisa digunakan.”"],
+["","Adrian memandangnya dalam diam. Untuk sesaat, wajahnya tampak lebih tua daripada yang terlihat di panggung. Ia kemudian berkata bahwa masalah perusahaan sebaiknya disampaikan melalui bagian hukum."],
+["dialog","“Saya mengerti, Pak. Saya hanya berharap orang-orang di perusahaan Bapak juga mengerti bahwa nama seseorang bukan sesuatu yang bisa dipakai tanpa izin.”"],
+["","Alena membungkuk sopan dan pergi. Ia tidak memperoleh jawaban, tetapi ia melihat sesuatu di mata Adrian: bukan keterkejutan, melainkan pengenalan. Seolah lelaki itu pernah melihat persoalan serupa sebelumnya dan berharap tidak perlu melihatnya lagi."]
+]
+},
+
+{
+title:"Percakapan di Balkon",
+paragraphs:[
+["dropcap","Menjelang pukul sepuluh, Raka akhirnya menemukan Alena di balkon samping ballroom. Musik dari dalam terdengar samar. Angin malam menggerakkan ujung rambut Alena, tetapi ia tidak berbalik ketika mendengar langkah lelaki itu."],
+["dialog","“Aku tahu kamu marah,” kata Raka."],
+["dialog","“Kamu tidak tahu apa-apa tentang apa yang kurasakan sekarang.”"],
+["dialog","“Aku membuat kesalahan. Tapi ada hal-hal yang tidak bisa kamu pahami tentang keluargaku.”"],
+["dialog","Alena menoleh. “Kamu selalu menggunakan keluargamu sebagai alasan. Lalu kapan kamu akan menjelaskan apa yang kamu lakukan atas namaku?”"],
+["","Raka terdiam. Ia mengatakan bahwa dokumen tersebut bukan sesuatu yang perlu dikhawatirkan dan bahwa pengacara perusahaan sedang menanganinya. Ia meminta Alena mempercayainya sekali lagi."],
+["dialog","“Kepercayaan bukan tombol yang bisa kamu tekan ketika kamu membutuhkan sesuatu.”"],
+["","Raka mengusap wajahnya. Untuk pertama kalinya, Alena melihat ketakutan di balik sikap percaya dirinya. Namun, ia belum tahu apakah lelaki itu takut kehilangan dirinya, takut rahasianya terbongkar, atau takut pada seseorang yang jauh lebih berkuasa darinya."],
+["","Alena meninggalkan balkon tanpa menunggu jawaban. Ia tidak lagi ingin menukar pertanyaan penting dengan janji yang terdengar indah."]
+]
+},
+
+{
+title:"Saksi yang Tidak Disangka",
+paragraphs:[
+["dropcap","Ketika Alena kembali ke koridor, seorang perempuan paruh baya memanggilnya dari dekat pintu ruang staf. Perempuan itu mengenakan seragam hitam sederhana dan tanda pengenal hotel. Namanya Sari."],
+["dialog","“Maaf, Mbak Alena. Saya tidak sengaja mendengar nama Mbak tadi.”"],
+["dialog","“Apa kita pernah bertemu?”"],
+["","Sari menggeleng. Ia mengatakan bahwa beberapa bulan sebelumnya, ia pernah bertugas dalam sebuah pertemuan privat di hotel yang sama. Raka hadir bersama beberapa orang dari perusahaan, termasuk seorang pria yang membawa map berwarna biru tua. Nama Alena disebut dalam percakapan itu, padahal Alena tidak berada di sana."],
+["dialog","“Saya tidak tahu urusan mereka, Mbak. Saya hanya ingat karena nama itu disebut berkali-kali.”"],
+["","Alena menahan napas. Ia tidak meminta Sari mencuri dokumen atau melanggar aturan tempat kerjanya. Ia hanya bertanya apakah perempuan itu bersedia menghubunginya jika suatu hari mengingat detail yang relevan dan dapat disampaikan secara sah."],
+["","Sari ragu, lalu mengangguk kecil. Sebelum pergi, ia menambahkan bahwa pria pembawa map biru itu bukan Raka."],
+["","Alena kembali ke ballroom dengan langkah perlahan. Untuk pertama kalinya, ia memiliki petunjuk bahwa seseorang selain Raka mungkin memegang peran penting dalam perkara tersebut."]
+]
+},
+
+{
+title:"Pulang Tanpa Air Mata",
+paragraphs:[
+["dropcap","Alena meninggalkan gala sebelum acara selesai. Di perjalanan pulang, ia duduk di dalam taksi sambil memandang pantulan wajahnya di jendela. Ia tidak menangis. Bukan karena rasa sakitnya hilang, tetapi karena pikirannya sedang bekerja lebih keras daripada hatinya."],
+["","Sesampainya di rumah, ia membuka buku catatan. Ia menuliskan nama-nama yang kini muncul dalam penyelidikannya: Raka, Nadin, Adrian, Dimas, dan Arunika Konsultan Investama. Ia menghubungkan setiap nama dengan tanggal, percakapan, dan dokumen yang benar-benar ia miliki."],
+["","Ia memisahkan fakta dari dugaan. Raka pernah menggunakan namanya tanpa izin menurut dokumen yang ia terima. Nama Arunika muncul dalam berkas. Dimas menunjukkan kegelisahan. Adrian tampak mengenali persoalan itu. Sari mengingat sebuah pertemuan, tetapi belum memiliki bukti tertulis."],
+["","Belum satu pun petunjuk itu membuktikan keseluruhan cerita. Alena tahu ia harus berhati-hati agar kemarahan tidak membuatnya melihat kesimpulan yang sebenarnya belum ada."],
+["dialog","“Aku tidak perlu menang malam ini,” gumamnya. “Aku hanya perlu tahu langkah berikutnya.”"],
+["","Ia menyimpan semua salinan di dua tempat yang aman dan mengatur konsultasi lanjutan. Ia tidak mengirim ancaman, tidak membuat unggahan di media sosial, dan tidak menghubungi Nadin untuk bertengkar."],
+["","Di luar rumah, gang mulai sepi. Alena mematikan lampu dan duduk beberapa saat dalam gelap. Pembalasan yang ia bayangkan dahulu adalah teriakan. Kini ia memahami bahwa terkadang tindakan paling kuat dimulai dari keputusan untuk tidak memberi lawan kesempatan membaca langkahnya."]
+]
+},
+
+{
+title:"Pekerjaan Kecil, Rahasia Besar",
+paragraphs:[
+["dropcap","Dua hari kemudian, Alena kembali menjalani rutinitas. Ia masuk kantor tepat waktu, menyelesaikan laporan, dan menjawab surel seperti biasa. Tidak ada yang tahu bahwa setiap malam ia memeriksa dokumen dan mencoba memahami bagaimana namanya dapat terhubung dengan transaksi perusahaan."],
+["","Mira menjadi satu-satunya orang yang mengetahui sebagian persoalan itu. Ia membantu Alena menyusun kronologi, tetapi mengingatkannya untuk tidak mengakses sistem kantor atau akun milik orang lain tanpa izin."],
+["dialog","“Kamu tidak perlu menjadi detektif sendirian,” kata Mira. “Kalau ada dugaan pemalsuan, biarkan orang yang berwenang memeriksa bukti.”"],
+["dialog","“Aku tahu. Tapi aku harus memahami cukup banyak supaya tidak mudah dibohongi lagi.”"],
+["","Alena mulai mempelajari istilah dalam dokumen, meminta penjelasan profesional, dan menandai bagian yang belum dapat ia pahami. Sedikit demi sedikit, kebingungan berubah menjadi daftar pertanyaan yang lebih tajam."],
+["","Sore itu, sebuah surel masuk dari alamat yang tidak ia kenal. Pengirimnya tidak mencantumkan nama. Isinya hanya satu kalimat: Periksa tanggal persetujuan pada lampiran ketiga."],
+["","Alena tidak membuka tautan apa pun. Ia menyimpan surel tersebut, memeriksa lampiran dengan hati-hati, dan meminta nasihat sebelum melakukan tindakan lebih jauh."],
+["","Pada lampiran ketiga, ia menemukan tanggal yang membuatnya membeku. Dokumen itu menyatakan persetujuannya diberikan pada hari ketika ia justru sedang berada di rumah sakit menemani ibunya."]
+]
+},
+
+{
+title:"Tanggal yang Mustahil",
+paragraphs:[
+["dropcap","Alena memeriksa catatan hari itu. Ia masih menyimpan bukti pembayaran rumah sakit, pesan kepada atasannya, dan foto yang dikirim kepada Mira dari ruang tunggu. Semua menunjukkan bahwa ia berada jauh dari kantor perusahaan pada tanggal yang tercantum dalam dokumen."],
+["","Hal itu belum otomatis membuktikan siapa yang membuat dokumen tersebut. Namun, ia memiliki alasan kuat untuk mempertanyakan keabsahannya. Ia menyalin informasi yang relevan dan menghubungi penasihat hukum untuk menanyakan cara meminta pemeriksaan resmi."],
+["dialog","“Jangan mengubah berkas aslinya,” kata penasihat itu melalui telepon. “Simpan sumbernya, catat kapan kamu menerimanya, dan jangan membuat tuduhan yang belum dapat dibuktikan.”"],
+["dialog","“Saya mengerti. Saya ingin membersihkan nama saya, bukan menciptakan masalah baru.”"],
+["","Setelah panggilan berakhir, Alena duduk lama di depan laptop. Ada rasa takut yang sulit dijelaskan. Jika tanda tangannya dipalsukan, berarti seseorang telah merencanakan sesuatu. Jika dokumen itu hanya satu bagian dari rangkaian yang lebih besar, mungkin ada lebih banyak orang yang terlibat."],
+["","Ponselnya kembali bergetar. Kali ini pesan dari Raka."],
+["dialog","“Aku dengar kamu mulai bertanya tentang dokumen perusahaan. Tolong berhenti sebelum semuanya menjadi lebih buruk.”"],
+["","Alena membaca pesan itu dengan wajah tenang. Ia tidak menjawab. Ancaman yang dibungkus sebagai kekhawatiran tetaplah ancaman. Ia menyimpan pesan tersebut bersama catatan lain, lalu melanjutkan pekerjaannya."]
+]
+},
+
+{
+title:"Nadin Mulai Gelisah",
+paragraphs:[
+["dropcap","Di apartemennya, Nadin duduk di depan meja rias sambil membaca pesan dari Raka. Lelaki itu menanyakan apakah Alena telah berbicara dengan Adrian. Nadin menjawab tidak tahu, meskipun ia sendiri melihat Alena di gala dan menyadari bahwa perempuan itu tidak datang untuk meminta Raka kembali."],
+["","Sejak malam itu, Alena menjadi sesuatu yang tidak nyaman bagi Nadin. Dahulu, ia tahu bagaimana membuat sahabatnya merasa bersalah, bagaimana mengalihkan percakapan, dan bagaimana menyamarkan rasa iri dengan candaan. Tetapi perempuan yang kini muncul di gala tidak lagi bereaksi sesuai perkiraannya."],
+["dialog","“Kamu yakin dia belum punya bukti?” tanya Nadin saat berbicara dengan Raka."],
+["dialog","“Aku tidak tahu. Itu sebabnya aku menyuruhmu berhati-hati.”"],
+["dialog","“Kamu yang bilang semuanya sudah aman.”"],
+["","Raka tidak menjawab. Keheningan itu membuat Nadin sadar bahwa ia mungkin tidak pernah mengetahui keseluruhan rencana. Ia hanya diberi informasi secukupnya, cukup untuk ikut terlibat tetapi tidak cukup untuk memahami risiko yang sebenarnya."],
+["","Malam itu, Nadin membuka laci dan mengambil sebuah kartu memori kecil yang disimpannya sejak lama. Ia menatapnya lama, lalu mengembalikannya ke tempat semula."],
+["","Ada sesuatu di dalam kartu itu yang ia takuti. Bukan karena Alena pasti akan menemukannya, melainkan karena isi di dalamnya dapat mengubah cara Nadin melihat lelaki yang selama ini ia pilih."]
+]
+},
+
+{
+title:"Pertemuan Tanpa Nama",
+paragraphs:[
+["dropcap","Pada Jumat sore, Alena menerima pesan baru dari alamat surel anonim. Kali ini pengirimnya menawarkan pertemuan di sebuah kedai kopi dekat stasiun, pada siang hari, di tempat terbuka. Tidak ada ancaman atau tuntutan. Hanya kalimat bahwa ia mengetahui siapa yang membawa map biru."],
+["","Alena tidak langsung menyetujui. Ia meneruskan pesan kepada Mira, memberitahu orang terdekat tentang rencana pertemuan, dan memilih lokasi publik. Ia juga memutuskan tidak membawa dokumen asli atau memberikan informasi pribadi yang tidak diperlukan."],
+["","Pria yang menemuinya tiba lima menit terlambat. Usianya sekitar empat puluh tahun, mengenakan kemeja biru muda dan membawa tas kerja lusuh. Ia memperkenalkan diri sebagai Bima, mantan staf administrasi salah satu perusahaan mitra Mahendra Group."],
+["dialog","“Saya tidak punya semua jawaban,” kata Bima. “Tapi saya tahu nama Anda muncul dalam berkas sebelum Anda pernah bertemu Pak Raka.”"],
+["dialog","Alena menatapnya. “Bagaimana itu mungkin?”"],
+["","Bima mengatakan bahwa beberapa dokumen proyek telah disiapkan lebih awal. Ia tidak berani menjelaskan lebih jauh tanpa memastikan keselamatan dirinya dan keluarganya."],
+["","Alena tidak memaksanya. Ia meminta Bima menyampaikan informasi melalui jalur yang aman dan sah, serta tidak mengambil atau menyebarkan berkas rahasia secara sembarangan."],
+["","Sebelum pergi, Bima menyebut satu nama: Surya Mahendra, paman Raka yang sudah bertahun-tahun tidak muncul di depan publik."]
+]
+},
+
+{
+title:"Paman yang Dihapus dari Cerita",
+paragraphs:[
+["dropcap","Nama Surya Mahendra membuat Alena kembali memeriksa berita lama dan informasi perusahaan yang tersedia untuk umum. Ia menemukan bahwa Surya pernah menjabat sebagai direktur operasional sebelum mengundurkan diri beberapa tahun lalu. Tidak ada penjelasan terperinci mengenai kepergiannya, hanya pernyataan singkat tentang perbedaan pandangan dalam pengelolaan bisnis."],
+["","Alena tidak tahu apakah Surya memiliki hubungan dengan dokumen yang mencatut namanya. Namun, kemunculan nama itu membuka kemungkinan bahwa masalah ini berawal jauh sebelum hubungan cintanya dengan Raka."],
+["","Malam itu, ia menghubungi Bima melalui alamat yang telah disepakati. Ia meminta penjelasan lebih lanjut tentang apa yang ia maksud dengan dokumen yang disiapkan lebih awal. Bima menjawab bahwa ia akan mencoba memastikan tanggal dan alur administrasi tanpa melanggar kewajiban profesionalnya."],
+["dialog","“Kalau Anda takut, Anda tidak perlu mengambil risiko demi saya,” tulis Alena."],
+["dialog","Bima membalas, “Ini bukan hanya tentang Anda. Ada orang-orang yang terlalu lama diam karena takut kehilangan pekerjaan.”"],
+["","Kalimat itu membuat Alena terdiam. Ia selama ini menganggap dirinya korban utama dari perkara ini. Kini ia mulai melihat kemungkinan bahwa ada orang lain yang juga terjebak dalam sistem yang tidak mereka kendalikan."],
+["","Namun, simpati tidak menghapus kehati-hatian. Alena belum tahu siapa yang jujur, siapa yang menyembunyikan fakta, dan siapa yang sedang menggunakannya untuk kepentingan sendiri."],
+["","Ia menulis satu kalimat di buku catatannya: Jangan percaya pada seseorang hanya karena ia membawa rahasia."]
+]
+},
+
+{
+title:"Harga dari Sebuah Kesabaran",
+paragraphs:[
+["dropcap","Hari-hari berikutnya berjalan tanpa kejadian besar. Alena tetap bekerja, mengurus ibunya, dan menjalani konsultasi yang diperlukan. Tidak ada ledakan, tidak ada konfrontasi dramatis. Namun, di balik rutinitas itu, ia mulai menyusun gambaran yang lebih jelas tentang kerugian yang mungkin ditimbulkan oleh dokumen tersebut."],
+["","Ia meminta klarifikasi tertulis kepada pihak terkait, menyimpan jawaban yang diterima, dan mengikuti saran profesional tentang langkah selanjutnya. Ia tidak mencoba masuk ke sistem perusahaan atau mengambil informasi yang bukan haknya. Ia tahu satu kesalahan dapat mengalihkan perhatian dari persoalan yang sebenarnya."],
+["","Raka beberapa kali mengirim pesan. Kadang ia meminta maaf, kadang ia menyebut masa lalu mereka, dan kadang ia menuduh Alena ingin merusak keluarganya. Alena tidak lagi membalas pesan emosional. Ia hanya menanggapi hal yang berhubungan langsung dengan namanya dan dokumen tersebut."],
+["dialog","“Kamu benar-benar sudah berubah,” tulis Raka."],
+["dialog","Alena mengetik balasan singkat: “Aku hanya tidak lagi mengabaikan sesuatu yang merugikanku.”"],
+["","Setelah mengirim pesan itu, ia meletakkan ponsel dan melanjutkan makan malam bersama ibunya. Bu Ratih mulai pulih dan sesekali tertawa ketika menceritakan pelanggan nasi uduk yang selalu meminta sambal tambahan."],
+["","Untuk pertama kalinya dalam beberapa minggu, Alena merasa ia masih memiliki sesuatu yang lebih berharga daripada kemenangan atas Raka: kehidupan yang tidak sepenuhnya berputar di sekitar lelaki itu."]
+]
+},
+
+{
+title:"Surat dari Orang yang Tak Dikenal",
+paragraphs:[
+["dropcap","Pada suatu pagi, sebuah amplop putih ditemukan di bawah pintu rumah Alena. Tidak ada nama pengirim. Di dalamnya terdapat selembar kertas dengan tulisan tangan yang rapi dan sebuah foto lama. Foto itu memperlihatkan Raka ketika masih remaja, berdiri di samping seorang lelaki yang sangat mirip dengan Adrian, tetapi wajah lelaki itu dicoret menggunakan tinta hitam."],
+["","Di balik foto tertulis: Jika ingin memahami mengapa nama Anda dipilih, carilah perjanjian yang ditandatangani sebelum Surya pergi."],
+["","Alena memeriksa amplop itu tanpa menemukan petunjuk yang jelas tentang siapa pengirimnya. Ia tidak langsung menghubungi Surya atau mendatangi kantor Mahendra Group. Ia memotret isi amplop, menyimpannya, dan meminta saran tentang cara menangani pesan yang mungkin berkaitan dengan persoalan hukum."],
+["dialog","“Bisa jadi ini petunjuk. Bisa juga jebakan,” kata Mira setelah melihat foto itu."],
+["dialog","“Aku tahu. Aku tidak akan mengikuti seseorang ke tempat sepi hanya karena mereka memberiku selembar kertas.”"],
+["","Namun, nama Surya kini tidak lagi sekadar nama dari mulut mantan staf. Ia muncul dalam foto keluarga dan sebuah pesan yang menghubungkannya dengan perjanjian lama."],
+["","Alena memandang foto itu sekali lagi. Jika Raka bukan orang pertama yang menyusun rencana ini, siapa sebenarnya yang memilih namanya? Dan apa yang membuat seseorang merasa bahwa perempuan biasa dari sebuah gang di Bekasi dapat berguna bagi perusahaan sebesar Mahendra Group?"]
+]
+},
+
+{
+title:"Sebelum Kebenaran Terbuka",
+paragraphs:[
+["dropcap","Malam itu, Alena menyusun semua petunjuk yang telah ia dapatkan. Dokumen dengan tanggal yang mustahil. Nama Arunika Konsultan. Reaksi Dimas. Sikap Adrian. Kesaksian awal Sari. Keterangan Bima. Dan sekarang, foto lama yang mengarah kepada Surya Mahendra."],
+["","Belum semuanya terhubung. Ia tidak ingin mengarang jawaban hanya karena ingin segera menuntaskan rasa sakitnya. Tetapi ia juga tidak akan berhenti hanya karena orang-orang yang terlibat memiliki uang, pengaruh, atau nama keluarga yang terkenal."],
+["","Di sisi lain kota, Raka menerima panggilan dari seseorang yang tidak pernah ia sebut kepada Alena. Ia mendengarkan tanpa menyela, wajahnya semakin pucat dari menit ke menit."],
+["dialog","“Dia sudah menemukan nama itu?” suara di seberang bertanya."],
+["dialog","“Belum semuanya.”"],
+["dialog","“Kalau begitu, pastikan dia tidak menemukan perjanjian lama.”"],
+["","Panggilan terputus. Raka berdiri sendirian di ruang kerjanya, menatap foto keluarga yang terpajang di dinding. Untuk pertama kalinya, ia tampak bukan seperti pewaris perusahaan besar, melainkan seorang lelaki yang takut pada sesuatu yang sudah lama disembunyikan keluarganya."],
+["","Di rumah sederhana di Bekasi, Alena menutup buku catatannya. Ia tidak tahu bahwa seseorang baru saja memberi perintah untuk menghentikan pencariannya."],
+["","Ia hanya tahu bahwa malam ini, untuk pertama kalinya, ia tidak lagi mencari jawaban tentang mengapa Raka berhenti mencintainya. Ia sedang mencari tahu siapa yang mengubah hidupnya menjadi bagian dari sebuah rencana."]
+]
+},
+
+{
+title:"Rahasia yang Menunggu di Balik Pintu",
+paragraphs:[
+["dropcap","Pagi berikutnya, Alena menemukan pesan dari Bima. Ia menulis bahwa ia telah memastikan satu hal: perjanjian lama yang disebut dalam surat itu memang pernah ada. Namun, dokumen tersebut tidak disimpan dalam arsip operasional biasa. Menurut catatan yang ia ingat, salinannya pernah dibawa ke kantor notaris ketika Surya masih menjabat."],
+["","Bima tidak mengirimkan dokumen rahasia atau menjanjikan bahwa ia bisa mendapatkannya. Ia hanya memberikan informasi yang dapat membantu Alena menanyakan perkara tersebut melalui jalur yang benar."],
+["dialog","“Apa isi perjanjiannya?” tanya Alena melalui pesan."],
+["dialog","“Saya tidak tahu seluruh isinya. Tapi ada satu kalimat yang masih saya ingat: nama pihak ketiga akan digunakan untuk menjamin kelangsungan proyek.”"],
+["","Alena merasakan hawa dingin menjalar di punggungnya. Ia belum tahu apakah namanya benar-benar berkaitan dengan perjanjian itu atau apakah seseorang sengaja membuatnya percaya demikian. Tetapi kemungkinan tersebut cukup serius untuk ditindaklanjuti."],
+["","Ia menghubungi penasihat hukumnya, meminta arahan mengenai pemeriksaan dokumen dan perlindungan identitasnya. Setelah itu, ia menulis kepada Bima bahwa ia tidak ingin siapa pun mengambil risiko yang tidak perlu."],
+["","Sore harinya, saat pulang kerja, Alena melihat sebuah mobil hitam berhenti di ujung gang. Kacanya gelap. Mobil itu tidak membunyikan klakson, tidak menurunkan jendela, dan tidak melakukan apa pun selain diam."],
+["","Alena tetap berjalan menuju rumah. Ketika ia menoleh beberapa menit kemudian, mobil itu telah pergi. Di depan pintu, terselip secarik kertas tanpa nama: Berhenti mencari sebelum kamu kehilangan lebih banyak."]
+]
+},
+
+{
+title:"Permainan Baru Dimulai",
+paragraphs:[
+["dropcap","Alena membaca ancaman itu di bawah cahaya lampu teras. Tangannya dingin, tetapi ia tidak merobek kertas tersebut. Ia memotretnya, mencatat kapan dan di mana ia menemukannya, lalu menyimpannya bersama bukti lain. Ia memberi tahu Mira dan orang yang membantunya menangani persoalan hukum."],
+["","Ketakutan itu nyata. Ia memikirkan ibunya, rumah kecil mereka, dan pekerjaan yang menjadi sumber penghidupan. Untuk sesaat, ia ingin menghentikan semuanya. Ia ingin kembali menjadi perempuan yang hanya memikirkan jadwal bus, laporan kantor, dan menu makan malam."],
+["","Namun, jika ia berhenti sekarang, namanya mungkin tetap terikat pada sesuatu yang tidak pernah ia lakukan. Ia tidak ingin hidup dalam ketakutan terhadap dokumen yang bahkan tidak ia pahami sepenuhnya."],
+["dialog","“Ibu, kalau suatu hari aku harus menghadapi masalah besar, Ibu jangan menyalahkan dirimu, ya?”"],
+["dialog","Bu Ratih menggenggam tangan putrinya. “Ibu hanya ingin kamu selamat. Menang atau kalah, jangan sampai kamu kehilangan dirimu sendiri.”"],
+["","Alena mengangguk. Ia tidak berjanji akan menjadi kuat setiap saat. Ia hanya berjanji untuk berhati-hati, mencari bantuan, dan tidak membiarkan kemarahan membuatnya melakukan sesuatu yang akan ia sesali."],
+["","Di tempat lain, Nadin akhirnya membuka kartu memori yang selama ini disimpannya. Ia melihat sebuah rekaman lama, menekan tombol putar, lalu menutup mulutnya ketika mendengar nama Alena disebut oleh seseorang yang tidak pernah ia duga."],
+["","Nadin memundurkan rekaman itu. Ia mendengarkan sekali lagi. Kali ini, ia tahu bahwa rahasia yang disimpannya tidak hanya dapat menghancurkan Alena. Rahasia itu juga dapat menghancurkan Raka—dan mungkin dirinya sendiri."]
+]
+},
+
+{
+title:"Suara dari Masa Lalu",
+paragraphs:[
+["dropcap","Rekaman itu berakhir dengan suara kursi bergeser dan pintu tertutup. Nadin duduk kaku di tepi tempat tidur. Selama ini, ia mengira dirinya hanya mengambil kesempatan yang datang kepadanya. Ia tahu Raka memiliki masalah, tahu ada dokumen yang perlu diselesaikan, tetapi ia tidak pernah benar-benar menanyakan dari mana semuanya berasal."],
+["","Kini ia mendengar sesuatu yang tidak dapat ia abaikan. Nama Alena telah disebut dalam pembicaraan jauh sebelum perselingkuhan mereka dimulai. Ada orang yang membicarakan nama itu seolah sedang memilih sebuah alat untuk menjalankan rencana."],
+["dialog","“Tidak mungkin,” bisik Nadin."],
+["","Ia menghubungi Raka. Panggilan pertama tidak dijawab. Panggilan kedua langsung ditolak. Ketika akhirnya Raka mengangkat telepon, Nadin tidak membuang waktu."],
+["dialog","“Aku menemukan rekaman lama. Ada pembicaraan tentang Alena sebelum kita mulai bersama.”"],
+["dialog","Raka terdiam. “Kamu seharusnya tidak membuka barang itu.”"],
+["dialog","“Jadi kamu tahu?”"],
+["","Tidak ada jawaban. Dan keheningan Raka adalah jawaban yang paling ditakuti Nadin."],
+["","Sementara itu, Alena menerima pesan dari nomor anonim yang sama seperti sebelumnya. Kali ini pesannya singkat: Jangan cari Surya melalui Raka. Cari tahu mengapa Surya pergi."],
+["","Alena menatap layar. Potongan-potongan rahasia mulai saling mendekat, tetapi semakin dekat pula bahaya yang mengelilinginya. Ia belum tahu siapa yang berada di pihaknya. Ia bahkan belum tahu apakah orang yang memberinya petunjuk sedang membantunya atau sedang mengarahkannya ke perangkap."]
+]
+},
+
+{
+title:"Akhir dari Keheningan",
+paragraphs:[
+["dropcap","Malam semakin larut ketika Alena duduk di meja kecilnya. Ia membuka buku catatan dan menulis sebuah kalimat di halaman terakhir: Aku tidak akan membalas luka dengan kebohongan. Aku akan membiarkan kebenaran melakukan pekerjaannya."],
+["","Ia telah berubah. Bukan menjadi perempuan yang tidak bisa menangis, bukan pula seseorang yang tidak lagi percaya pada cinta. Ia hanya belajar bahwa memaafkan, mempercayai, dan memberikan kesempatan adalah tiga hal yang berbeda. Tidak seorang pun berhak menuntut ketiganya hanya karena pernah menjadi bagian dari hidupnya."],
+["","Raka masih memiliki kekuasaan. Nadin masih menyimpan rahasia. Mahendra Group masih berdiri megah, seolah tidak ada yang terjadi. Tetapi di bawah permukaan, beberapa orang mulai gelisah. Sebuah dokumen dipertanyakan. Sebuah rekaman kembali diputar. Sebuah nama dari masa lalu mulai disebut lagi."],
+["dialog","“Permainan ini belum selesai,” bisik Alena."],
+["","Ponselnya menyala. Sebuah pesan baru masuk dari Bima, hanya terdiri dari satu baris: Saya sudah menemukan petunjuk tentang lokasi perjanjian lama. Tapi ada sesuatu yang perlu Anda ketahui terlebih dahulu."],
+["","Sebelum Alena sempat membalas, pesan kedua masuk. Kali ini dari nomor yang berbeda."],
+["dialog","“Jika kamu ingin tahu siapa yang memilih namamu, datanglah besok ke alamat ini. Jangan beri tahu Raka. Jangan beri tahu Nadin.”"],
+["","Di bawah pesan itu tercantum sebuah alamat lama di Jakarta, disertai nama yang membuat Alena kehilangan kata-kata: Surya Mahendra."],
+["scene","Alena menatap alamat itu sampai layar ponselnya meredup. Kebenaran akhirnya memiliki pintu. Namun, ia belum tahu apakah di balik pintu tersebut menunggu jawaban—atau pengkhianatan yang jauh lebih besar."]
+]
+}
+
+];
+
+let current = 0;
+
+const titleEl = document.getElementById("title");
+const storyEl = document.getElementById("story");
+const labelEl = document.getElementById("label");
+const counterEl = document.getElementById("counter");
+const percentEl = document.getElementById("percent");
+const barEl = document.getElementById("bar");
+const prevBtn = document.getElementById("prev");
+const nextBtn = document.getElementById("next");
+const pagesEl = document.getElementById("pages");
+const endEl = document.getElementById("end");
+
+function render() {
+  const page = chapters[current];
+
+  titleEl.textContent = page.title;
+  labelEl.textContent = `Chapter 2 · Halaman ${current + 1}`;
+  counterEl.textContent = `Halaman ${current + 1} dari ${chapters.length}`;
+
+  const percent = Math.round(((current + 1) / chapters.length) * 100);
+  percentEl.textContent = `${percent}% terbaca`;
+  barEl.style.width = `${percent}%`;
+
+  storyEl.replaceChildren();
+
+  page.paragraphs.forEach(([type, text]) => {
+    const p = document.createElement("p");
+    p.textContent = text;
+    if (type) p.className = type;
+    storyEl.appendChild(p);
+  });
+
+  prevBtn.disabled = current === 0;
+  nextBtn.disabled = current === chapters.length - 1;
+
+  nextBtn.textContent =
+    current === chapters.length - 1
+      ? "Chapter 2 Selesai ✓"
+      : "Halaman Selanjutnya →";
+
+  endEl.hidden = current !== chapters.length - 1;
+
+  [...pagesEl.children].forEach((button, i) => {
+    button.classList.toggle("active", i === current);
+    button.setAttribute("aria-current", i === current ? "page" : "false");
+  });
+
+  document.querySelector(".reader").scrollIntoView({
+    behavior: "smooth",
+    block: "start"
+  });
+}
+
+chapters.forEach((page, i) => {
+  const button = document.createElement("button");
+  button.type = "button";
+  button.textContent = i + 1;
+  button.setAttribute("aria-label", `Buka halaman ${i + 1}`);
+
+  button.addEventListener("click", () => {
+    current = i;
+    render();
+  });
+
+  pagesEl.appendChild(button);
+});
+
+prevBtn.addEventListener("click", () => {
+  if (current > 0) {
+    current--;
+    render();
+  }
+});
+
+nextBtn.addEventListener("click", () => {
+  if (current < chapters.length - 1) {
+    current++;
+    render();
+  }
+});
+
+document.addEventListener("keydown", event => {
+  if (event.key === "ArrowRight" && current < chapters.length - 1) {
+    current++;
+    render();
+  }
+
+  if (event.key === "ArrowLeft" && current > 0) {
+    current--;
+    render();
+  }
+});
+
+render();
+</script>
+</body>
+</html>
